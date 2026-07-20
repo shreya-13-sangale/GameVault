@@ -26,6 +26,30 @@ GameVault is a full-stack game management web application built using Spring Boo
 - Maven
 - REST API
 
+## 📁 Project Structure
+
+GameVault/
+├── src/main/java/com/gamevault/gamevault/
+│   ├── controller/
+│   │   └── GameController.java
+│   ├── model/
+│   │   └── Game.java
+│   ├── repository/
+│   │   └── GameRepository.java
+│   └── GamevaultApplication.java
+│
+├── src/main/resources/
+│   ├── db/migration/
+│   ├── static/
+│   │   ├── index.html
+│   │   ├── style.css
+│   │   └── script.js
+│   └── application.properties
+│
+├── screenshots/
+├── pom.xml
+└── README.md
+
 ## 📂 Project Architecture
 
 The application follows a structured backend architecture:
@@ -35,6 +59,14 @@ The application follows a structured backend architecture:
 - Repository – Handles database operations
 - Frontend – HTML, CSS and JavaScript
 - Database – MySQL with Flyway migrations
+
+## 🔗 REST API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/games` | Get all games |
+| POST | `/api/games` | Add a new game |
+| DELETE | `/api/games/{id}` | Delete a game |
 
 ## ⚙️ How to Run
 
