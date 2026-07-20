@@ -52,8 +52,25 @@ The application follows a structured backend architecture:
 
 This project was developed to demonstrate full-stack development using Java Spring Boot, REST APIs, database integration, and a dynamic frontend.
 
+## 📸 Project Screenshots
+
+### 🏠 Home Page
+![GameVault Home Page](screenshots/home.png)
+
+### 🎮 Game Collection
+![Game Collection](screenshots/games.png)
+
+### 🕹️ More Games
+![More Games](screenshots/more-games.png)
+
+### ▶️ Play Game
+![Temple Run 2 Gameplay](screenshots/play-game.png)
+
+### ➕ Add New Game
+![Add New Game](screenshots/add-game.png)
+
 ## 👩‍💻 Developer
 
 **Shreya Sangale**
 
-B.Tech – Artificial Intelligence & Machine Learning
+B.Tech – Computer Science And Engineering
