@@ -1,0 +1,8 @@
+CREATE TABLE games (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(150) NOT NULL,
+    genre VARCHAR(100) NOT NULL,
+    platform VARCHAR(100) NOT NULL,
+    release_year INT NOT NULL,
+    rating DOUBLE NOT NULL
+);

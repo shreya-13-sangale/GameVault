@@ -1,0 +1,2 @@
+ALTER TABLE games
+ADD COLUMN play_url VARCHAR(1000);

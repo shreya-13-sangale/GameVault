@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🎮 GameVault</div>
+    <a href="#addGame">+ Add Game</a>
+</nav>
+
+<header>
+    <div class="badge">YOUR GAMING COLLECTION</div>
+
+    <h1>
+        Welcome to
+        <span>GameVault</span>
+    </h1>
+
+    <p>
+        Organize, explore and launch your favourite games
+        from one place.
+    </p>
+</header>
+
+<section class="stats">
+
+    <div class="stat">
+        <h2 id="totalGames">0</h2>
+        <p>Games in Vault</p>
+    </div>
+
+    <div class="stat">
+        <h2 id="averageRating">0</h2>
+        <p>Average Rating</p>
+    </div>
+
+    <div class="stat">
+        <h2 id="platformCount">0</h2>
+        <p>Platforms</p>
+    </div>
+
+</section>
+
+<section class="collection">
+
+    <div class="section-title">
+
+        <div>
+            <p class="small-title">MY COLLECTION</p>
+            <h2>Explore the Vault</h2>
+        </div>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search games..."
+        >
+
+    </div>
+
+    <div id="gameContainer" class="games">
+        Loading games...
+    </div>
+
+</section>
+
+<section class="add-section" id="addGame">
+
+    <div class="form-info">
+
+        <p class="small-title">EXPAND YOUR COLLECTION</p>
+
+        <h2>Add a New Game</h2>
+
+        <p>
+            Add your favourite game to GameVault.
+            You can optionally provide a playable game link
+            to display a Play Now button.
+        </p>
+
+    </div>
+
+    <form id="gameForm">
+
+        <input
+            id="title"
+            type="text"
+            placeholder="Game title"
+            required
+        >
+
+        <input
+            id="genre"
+            type="text"
+            placeholder="Genre"
+            required
+        >
+
+        <input
+            id="platform"
+            type="text"
+            placeholder="Platform"
+            required
+        >
+
+        <input
+            id="releaseYear"
+            type="number"
+            placeholder="Release year"
+            required
+        >
+
+        <input
+            id="rating"
+            type="number"
+            step="0.1"
+            min="0"
+            max="10"
+            placeholder="Rating out of 10"
+            required
+        >
+
+        <input
+            id="playUrl"
+            type="url"
+            placeholder="Playable game link (optional)"
+        >
+
+        <p class="link-help">
+            Add a browser-playable game link if available.
+        </p>
+
+        <button type="submit">
+            Add to GameVault
+        </button>
+
+        <p id="message"></p>
+
+    </form>
+
+</section>
+
+<footer>
+
+    <div>
+        <strong>🎮 GameVault</strong>
+        <p>Video Game Collection Manager</p>
+    </div>
+
+    <div class="technologies">
+        <span>Spring Boot</span>
+        <span>MySQL</span>
+        <span>Flyway</span>
+        <span>JPA</span>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
